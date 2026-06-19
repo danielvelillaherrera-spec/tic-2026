@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* HEADER */
+
+header{
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1{
+    margin-bottom: 10px;
+}
+
+/* CONTENEDOR */
+
+.contenedor{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* NAV */
+
+nav{
+    width: 28%;
+    background-color: #d8b4e2;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.menu{
+    margin-bottom: 20px;
+}
+
+.menu li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.grupos{
+    max-height: 700px;
+    overflow-y: auto;
+}
+
+.grupos h4{
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 6px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.grupos ul{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.grupos li{
+    background: white;
+    margin: 3px 0;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+/* CONTENIDO */
+
+.contenido{
+    width: 72%;
+}
+
+article{
+    background-color: #87ceeb;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+article img{
+    width: 100%;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+article h2{
+    margin-bottom: 15px;
+}
+
+/* TABLA */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+th{
+    background-color: #006400;
+    color: white;
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
+}
+
+/* FORMULARIO */
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select,
+textarea{
+    padding: 10px;
+    margin: 8px 0 15px;
+}
+
+button{
+    background-color: #006400;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #004d00;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .contenedor{
+        flex-direction: column;
+    }
+
+    nav,
+    .contenido{
+        width: 100%;
+    }
+}
